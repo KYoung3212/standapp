@@ -45,7 +45,7 @@ class About extends Component {
             <div className="data">
                 <h2>Mike Yim</h2>
                 <i>Backend Developer</i>
-                <div>Favorite Hobby: Girls</div>
+                <div>Favorite Hobby: Tinder</div>
                 <a href="http://github.com/mikeyim337"><i className="fa fa-github" /></a>
                 <a href="http//linkedin.com/in/mike-yim-033356135/"><i className="fab fa-linkedin"/></a>
                 <a href="http://mikeyim.com/"><i className="fas fa-briefcase"/></a>
@@ -56,7 +56,7 @@ class About extends Component {
             <div className="data">
                 <h2>Matt Kirby</h2>
                 <i>Backend Developer</i>
-                <div>Favorite Hobby: Public Speaking</div>
+                <div>Favorite Hobby: Bartending</div>
                 <a href="http://github.com/rag329"><i className="fa fa-github" /></a>
                 <a href="http://linkedin.com/in/matthew-kirby-270a3329/"><i className="fab fa-linkedin"/></a>
                 <a href="https://matt-kirby.us"><i className="fas fa-briefcase"/></a>

@@ -110,6 +110,7 @@ async postRecording (e) {
 }
 
   openModal() {
+    this.pauseEffect();
     this.setState({modalIsOpen: true});
   }
  

@@ -28,7 +28,7 @@ class Post extends Component {
     this.state = {
         newsFeed: '',
         avatarID: this.props.avatar.avatar,
-        avatar: defaultAvatar,
+        avatar: Tuba,
         imageArray: [
             {name: 'Dj', src: Dj, id: 1},
             {name: 'Tuba', src: Tuba, id: 2},
@@ -40,7 +40,8 @@ class Post extends Component {
             {name: 'Jedi', src: Jedi, id: 8},
             {name: 'Celebrity', src: Celebrity, id: 9},
             {name: 'Sax', src: Sax, id: 10},
-            {name: 'Default', src: defaultAvatar, id: 0}
+            {name: 'Default', src: defaultAvatar, id: 0},
+            {name: 'Tuba', src: Tuba, id: 11},
         ]
     }
     }
@@ -83,7 +84,7 @@ class Post extends Component {
         return (
             <div>
                 <div>
-                    <Dm/>
+                    <Dm avatar={this.state.avatar}/>
                 </div>
                 <Header/>
                 <div className='container text-center'>
