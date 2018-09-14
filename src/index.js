@@ -6,7 +6,6 @@ import { createStore, applyMiddleware } from 'redux';
 import rootReducer from './reducers';
 import think from './middleware/think';
 import reduxPromise from './middleware/redux_promise';
-import registerServiceWorker from './helpers/registerServiceWorker';
 import types from './actions/types';
 
 import { Provider } from 'react-redux';
@@ -25,5 +24,3 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
-
-registerServiceWorker();

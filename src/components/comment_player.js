@@ -60,9 +60,10 @@ class CommentPlayer extends Component {
     }
 
     componentDidMount(){
-        // if ()
-        this.createAudio();
-        this.createVisualizer();
+        if (this.props.comment) {
+            this.createAudio();
+            this.createVisualizer();
+        }
     }
 
     async componentWillMount() {
