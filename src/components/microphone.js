@@ -105,6 +105,8 @@ async postRecording (e) {
   }).then(function(response) {
     console.log("Response", response);
   });
+
+  this.closeModal();
 }
 
   openModal() {
@@ -118,7 +120,6 @@ async postRecording (e) {
  
   closeModal() {
     this.setState({modalIsOpen: false});
-
   }
 
   selectCategory = (string) => {

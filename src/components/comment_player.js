@@ -59,19 +59,23 @@ class CommentPlayer extends Component {
         }
     }
 
-    componentDidMount(){
+    async componentDidMount(){
+        var currentLocation = window.location.href;
+        var result = /[^/]*$/.exec(currentLocation)[0]
+        await this.props.getSingleAudio(result);
+        console.log(this.props.comment)
         if (this.props.comment) {
             this.createAudio();
             this.createVisualizer();
         }
     }
 
-    async componentWillMount() {
-        var currentLocation = window.location.href;
-        var result = /[^/]*$/.exec(currentLocation)[0]
-        await this.props.getSingleAudio(result);
-        console.log(this.props.comment)
-    }
+    // async componentWillMount() {
+    //     var currentLocation = window.location.href;
+    //     var result = /[^/]*$/.exec(currentLocation)[0]
+    //     await this.props.getSingleAudio(result);
+    //     console.log(this.props.comment)
+    // }
 
     createAudio () {
         this.audio = new Audio(this.props.comment[0].audio_url);

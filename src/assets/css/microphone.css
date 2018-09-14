@@ -92,7 +92,7 @@
 @media only screen and (max-width: 500px) {
     .ReactModal__Content {
         width: 80% !important;
-        height: 80% !important
+        height: 50% !important
     }
     .title-input-container {
         width: 80%;

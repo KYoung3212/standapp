@@ -4,7 +4,7 @@ import '../assets/css/visualizer.css';
 import albumImage from '../assets/images/microphone.png'
 import axios from 'axios';
 import { connect } from 'react-redux';
-import { likeAudio, unlikeAudio, getUserID, deletePost } from '../actions';
+import { likeAudio, unlikeAudio, getUserID, deletePost, getNewsfeed } from '../actions';
 import Modal from 'react-modal';
 import CategoryModal from './category_modal';
 import {
@@ -41,7 +41,7 @@ const customStyles = {
       backgroundColor: 'grey',
       borderRadius: '20px'
     }
-  };
+};
 
 class VisualizerPlayer extends Component {
     constructor (props) {
@@ -152,7 +152,7 @@ class VisualizerPlayer extends Component {
     }
 
     rewind () {
-        this.audio.currentTime = this.audio.currentTime - 5;
+        this.audio.currentTime = this.audio.currentTime - 10;
     }
 
     mute () {
@@ -188,15 +188,6 @@ class VisualizerPlayer extends Component {
         }
     }
 
-    // need audio if from previous response passed into player to 
-    async getMp3FromS3 () {
-        const response = await axios.get('/api/stand_app.php', {
-            params: {
-                action: 'get_audio_from_s3'
-            }
-        })
-    }
-
     openModal() {
         this.setState({modalIsOpen: true});
     }
@@ -214,6 +205,7 @@ class VisualizerPlayer extends Component {
         console.log("DELETE AUDIO NAME: ", this.props)
         this.props.deletePost(this.props.audio.audio_name);
         this.closeModal();
+        this.getNewsfeed();
     }
 
     render () {
@@ -357,12 +349,12 @@ class VisualizerPlayer extends Component {
             ariaHideApp={false}
           >
  
-          <h2 ref={subtitle => this.subtitle = subtitle}>Are you sure you want to delete?</h2>
+          <h2 className="delete-title" ref={subtitle => this.subtitle = subtitle}>Are you sure you want to delete?</h2>
           <div className='container center-align'>
          
-            <div className='post-controls d-flex justify-content-center fa-2x'>
-              <button className='btn btn-dark' style={{padding: '10%', width: '60%'}} onClick={this.closeModal.bind(this)}><i className="fas fa-times fa-2x"/></button>
-              <button className='btn btn-warning' style={{padding: '10%', width: '60%', marginLeft: '5%'}} onClick={this.toggleDelete.bind(this)}><i className="fas fa-check"/></button>
+            <div className='delete-controls d-flex justify-content-center fa-2x'>
+              <button className='btn btn-dark' onClick={this.closeModal.bind(this)}><i className="fas fa-times fa-3x"/></button>
+              <Link to='/' className='btn btn-warning' onClick={this.toggleDelete.bind(this)}><i className="delete-check fas fa-check fa-2x"/></Link>
             </div>
           </div>
         </Modal>
@@ -384,5 +376,6 @@ export default connect(mapStateToProps, {
     likeAudio,
     unlikeAudio, 
     getUserID,
-    deletePost
+    deletePost,
+    getNewsfeed,
 })(VisualizerPlayer);

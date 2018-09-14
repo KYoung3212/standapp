@@ -9,7 +9,6 @@ if(!$conn) {
 
     print(json_encode($output));
 
-
     exit;
 }
 ?>
