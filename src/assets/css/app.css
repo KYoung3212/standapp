@@ -1,0 +1,8 @@
+@font-face {
+    font-family: 'Alcubierre';
+    src: url(../fonts/Alcubierre.otf);
+}
+
+body {
+    background: black;
+}

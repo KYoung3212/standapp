@@ -1,0 +1,99 @@
+.avatar_container {
+    width: 80%;
+}
+
+.avatar_container .fa-play-circle:hover, 
+.avatar_container .fa-pause-circle:hover {
+    color: rgb(114, 94, 42);
+    cursor: pointer;
+}
+
+.likes_container {
+    position: absolute;
+    right: -5%;
+}
+
+@media only screen and (min-width: 800px) {
+    .likes_container {
+        right: 0%;
+    }
+}
+
+.fa-play-circle,
+.fa-pause-circle {
+    color: rgb(177, 141, 52);
+}
+
+.likes_container {
+    color: grey;
+}
+
+.clickable-heart:hover {
+    color: rgb(177, 141, 52);
+    cursor: pointer;
+}
+
+.clickable-heart {
+    z-index: 1;
+    padding: 5px;
+}
+
+.post-title {
+    white-space: nowrap;
+    font-size: 1.3rem;
+}
+
+.post-title a:hover {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+    .post-title a {
+        text-decoration: underline
+    }
+}
+
+.audio_visualizer canvas {
+    width: 100%
+}
+
+.audio_visualizer {
+    display: inline-block;
+}
+
+.post-title .fa-trash:hover {
+    color: rgb(177, 141, 52);
+    cursor: pointer;
+}
+
+.post-hr {
+    width: 25%;
+    border: 0.1 solid grey;
+}
+
+.delete-controls {
+    position: absolute;
+    left: 50%;
+    bottom: 20%;
+    transform: translate(-50%, 5%);
+}
+
+.delete-title {
+    padding-top: 20%;
+}
+
+.delete-check {
+    position: relative;
+    top: 15%;
+}
+
+@media only screen and (max-width: 600px) {
+    .post-title {
+        white-space: nowrap;
+        font-size: 1rem;
+    }
+    .post-hr {
+        width: 25%;
+        border: 0.1 solid grey;
+    }
+}

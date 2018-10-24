@@ -1,0 +1,84 @@
+.modal-body {
+    top: 50%;
+    left: 50%;
+    position: fixed;
+    background-color: grey;
+    height: 70%;
+    width: 80%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    border-radius: 2%;
+}
+
+.fa-microphone-alt {
+    display: block;
+    text-align: center;
+}
+
+.modal-button {
+}
+
+.modal-comedy, 
+.modal-others {
+    font-size: 8rem;
+}
+
+.modal-comedy:hover,
+.modal-others:hover,
+.modal-comedy:hover + div, 
+.modal-others:hover + div{
+    color: rgb(177, 141, 52);
+    cursor: pointer;
+}
+
+.inner-record {
+    cursor: pointer;
+}
+
+.modal-text {
+    text-align: center;
+    font-size: 1.3rem;
+    padding-top: 3%;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    height: 10%;
+}
+
+.button-container {
+    height: 85%;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#modal-split {
+    border-color: black;
+}
+
+@media only screen and (min-width: 800px) {
+    .modal-body {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-height: 712px) {
+    .modal-comedy, 
+    .modal-others {
+        font-size: 6rem;
+    }
+}
+
+@media only screen and (max-height: 620px) {
+    .modal-comedy, 
+    .modal-others {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .modal-comedy, 
+    .modal-others {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,53 @@
+.audio_container {
+    margin: 15% auto;
+}
+
+.audio_container:first-child {
+    margin: 10% auto 5%;
+}
+
+.title_text {
+    width: 80%;
+}
+
+.audio_title {
+    font-size: 1rem;
+}
+
+.audio_display {
+    padding-top: 1%;
+}
+
+.audio_title {
+    margin-bottom: 3%;
+}
+
+.audio_image {
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.audio-player {
+    border: 0.2px solid black
+}
+
+@media only screen and (min-width: 600px) {
+    .audio_container:first-child {
+        margin: 5% auto 7%;
+    }
+
+    .audio_container {
+        margin: 10% auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .newsfeed {
+        max-width: 70%;
+        margin: auto;
+    }
+}

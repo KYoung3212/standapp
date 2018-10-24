@@ -1,0 +1,6 @@
+{
+    "require": {
+       "aws/aws-sdk-php": "^3.65",
+       "cloudconvert/cloudconvert-php": "2.2.*"
+    }
+}

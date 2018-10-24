@@ -1,0 +1,36 @@
+input.search-field {
+    background-color: black;
+    border-color: grey;
+}
+
+input.search-field:focus {
+    background-color: rgb(54, 53, 53);
+    border-color: grey;
+    color: white;
+}
+
+.search-field {
+    background-color: black;
+    border-color: grey;
+}
+
+.search-input{
+    background-color: black;
+    border-color: grey;
+}
+
+input{
+    background-color: black;
+    border-color: grey;
+    display: block;
+    margin : 0 auto;
+    width: 100%
+}
+
+textarea:focus, input:focus {
+    color:white;
+}
+
+input, select, textarea{
+    color: white;
+}

@@ -1,0 +1,8 @@
+#recording_page {
+    background-color: black;
+}
+
+#recording_page .fa-chevron-left{
+    color: white;
+    padding-top: 20px;
+}

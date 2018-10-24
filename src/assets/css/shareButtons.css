@@ -1,0 +1,23 @@
+.shareIcon {
+    vertical-align: top;
+    display: inline-block;
+    /* margin-right: 30px; */
+    text-align: center;
+  }
+  
+  .shareIcon__share-count {
+    margin-top: 3px;
+    font-size: 12px;
+  }
+  
+  .shareIcon__share-button {
+    cursor: pointer;
+  }
+  
+  .shareIcon__share-button:hover:not(:active) {
+    opacity: 0.75;
+  }
+
+  .shareContainer{
+    text-align: center;
+  }

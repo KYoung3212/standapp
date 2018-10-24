@@ -1,0 +1,19 @@
+.footer_mic {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(68, 64, 64, 0.5);
+    transition: bottom 0.3s;
+}
+
+.styles_button__3Vugn {
+    background: red !important;
+}
+
+.fa-circle, .fa-microphone {
+    color: rgb(241, 205, 112);
+}
+
+ .fa-microphone:hover {
+    color:rgb(206, 168, 73)
+}

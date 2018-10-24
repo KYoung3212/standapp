@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+#comment-canvas {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.player {
+    color: rgb(241, 205, 112)
+}
+
+.play, 
+.pause, 
+.mute, 
+.unmute, 
+.rewind{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.sound-controls {
+    padding-top: 5%;
+}
+
+.play:hover,
+.pause:hover,
+.mute:hover,
+.unmute:hover,
+.rewind:hover {
+    opacity: 0.85;
+}
+
+.song {
+    padding-top: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+.display-area {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.comments-container {
+}
+
+.time {
+    font-size: 1.5em;
+}
+
+.form-group {
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+#comment-input {
+    display: inline;
+}
+
+.comment-button {
+    display: inline;
+}
+
+.back-button {
+    padding-top: 20px;
+    padding-left: 16px;
+    color: white;
+}
+
+.controls-container {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    left: 0;
+    padding: 0 4%;
+}
+
+.controls > i {
+    width: 30%;
+}
+
+@media only screen and (orientation: landscape) {
+    .song h1 {
+        font-size: 2.5rem;
+    }
+    .song h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .song h1 {
+        font-size: 2rem;
+    }
+    .song h3 {
+        font-size: 1.3rem;
+    }
+}

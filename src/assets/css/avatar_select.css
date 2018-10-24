@@ -1,0 +1,39 @@
+.avatar_container {
+    margin-bottom: 5%;
+}
+
+.logo-avatar {
+    padding-top: 3%;
+    width: 25%;
+}
+
+.avatar-select-title {
+    font-family: 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    color: white;
+}
+
+.slick-slider {
+    width: 90%;
+    margin: auto;
+}
+
+.slick-slider img {
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .avatar-select-title {
+        font-size: 1.5rem;
+    }
+    .slick-slider {
+        padding-top: 15%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .slick-slider {
+        padding-top: 20%;
+    }
+}

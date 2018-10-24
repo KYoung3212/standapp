@@ -1,0 +1,129 @@
+.navBar {
+    padding-top: 16px;
+}
+
+.avatar_image {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.img-fluid {
+   height: 100%;
+}
+
+.back_button .fa-chevron-left {
+    color: white;
+}
+
+.back_button {
+    text-align: center;
+    padding-top: 8px;
+}
+
+hr {
+    border-color: grey;
+}
+
+
+.side-menu {
+    text-align: center;
+    padding-top: 16px;
+}
+
+.logo #logo-text {
+  padding: 0
+}
+
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+  
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background: rgb(155, 153, 153);
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 24px;
+  width: 24px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: #1b1a1a;
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #2b2c31;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: #b8b7ad;
+  font-family: 'Helvetica Neue', sans-serif
+}
+
+.menu-item {
+  padding: 5% 0;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  color: rgb(241, 205, 112);
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+
+.bm-item:first-child {
+  padding: 0 15% 10% 15%;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.bm-burger-button{
+  position: relative;
+  top: 14px;
+}
+
+.bm-menu-wrap {
+  left: 0;
+  top: 0
+}
+
+a { 
+  color: inherit; 
+  text-decoration: none;
+} 
+
+a:hover {
+  color: rgb(206, 168, 73);
+  text-decoration: none;
+
+}
+
+@media only screen and (max-width: 600px) {
+  .bm-burger-button {
+    left: 1px;
+    top: 10px;
+  }
+}

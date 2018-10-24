@@ -1,0 +1,260 @@
+.microphone button, .microphone .fa-circle {
+    color: white;
+}
+
+.microphone .fa-circle::before{
+    color: red;
+}
+
+.microphone {
+    width: 100vw
+}
+
+.sound-wave {
+    width: 100vw;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%)
+}
+
+.record-controls {
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    left: 0;
+}
+
+.record-controls button {
+    border-color: black;
+    background-color: black;
+}
+
+.record-controls * {
+    padding: 0
+}
+
+.fa-stop-circle {
+    color: white;
+}
+
+.ReactModal__Content {
+    text-align: center;
+}
+
+.title-input {
+    display: block;
+}
+
+.title-input-container {
+    width: 70%;
+    padding-bottom: 2%;
+}
+
+.recorded-audio-player {
+    padding-top: 5%
+}
+
+.effect-button {
+    color: rgb(177, 141, 52);
+    position: absolute;
+    right: 16px;
+    bottom: 10px;
+}
+
+.effect-button i:hover {
+    color: rgb(141, 114, 46);
+    cursor: pointer;
+}
+
+.fa-laugh-squint,
+.fa-hands {
+    display: block;
+    text-align: center;
+}
+
+.speaker-text {
+    font-size: 0.8rem;
+}
+
+.post-controls {
+    padding-top: 5%;
+}
+
+.recording-completed-title {
+    font-size: 1.5rem;
+}
+
+.ReactModal__Content .container {
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+@media only screen and (max-width: 2000px) {
+    .ReactModal__Content {
+        width: 60% !important;
+        height: 60% !important
+    }
+    .title-input-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .ReactModal__Content .container {
+        position: relative;
+        top: 40%;
+        transform: translate(0%, -50%);
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .ReactModal__Content {
+        width: 80% !important;
+        height: 50% !important
+    }
+    .title-input-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .ReactModal__Content {
+        width: 50% !important
+    }
+}
+
+@media only screen and (min-height: 600px) and (min-width: 700px) {
+    .ReactModal__Content {
+        width: 40% !important;
+        height: 62% !important
+    }
+    .title-input-container {
+        width: 80%;
+    }
+}
+
+label {
+    color: white;
+}
+
+/* bubbles css below */
+
+.bubble {
+    width: 60px;
+    height: 60px;
+    background: #ffb200;
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+    position: absolute;
+}
+
+.x1 {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    opacity: 0.2;
+    -webkit-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -o-animation: moveclouds 15s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x2 {
+    left: 10%;
+    -webkit-transform: scale(0.6);
+    -moz-transform: scale(0.6);
+    transform: scale(0.6);
+    opacity: 0.5;
+    -webkit-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+    -o-animation: moveclouds 25s linear infinite, sideWays 5s ease-in-out infinite alternate;
+}
+
+.x3 {
+    left: 30%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3;
+    -webkit-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+    -o-animation: moveclouds 20s linear infinite, sideWays 4s ease-in-out infinite alternate;
+}
+
+.x4 {
+    left: 66%;
+    -webkit-transform: scale(0.75);
+    -moz-transform: scale(0.75);
+    transform: scale(0.75);
+    opacity: 0.35;
+    -webkit-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -o-animation: moveclouds 18s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+.x5 {
+    left: 88%;
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0.3; 
+    -webkit-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -moz-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+    -o-animation: moveclouds 7s linear infinite, sideWays 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes moveclouds { 
+    0% { 
+        top: 100%;
+    }
+    100% { 
+        top: -100%;
+    }
+}
+
+@-webkit-keyframes sideWays { 
+    0% { 
+        margin-left: 0;
+    }
+    100% { 
+        margin-left: 10%;
+    }
+}
+
+@-moz-keyframes moveclouds {     
+    0% { 
+        top: 100%;
+    }
+
+    100% { 
+        top: -100%;
+    }
+}
+
+@-moz-keyframes sideWays {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 10%;
+    }
+}
+@-o-keyframes moveclouds {
+    0% { 
+        top: 100%;
+    }
+    100% { 
+        top: -100%;
+    }
+}
+
+@-o-keyframes sideWays {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: 10%;
+    }
+}
